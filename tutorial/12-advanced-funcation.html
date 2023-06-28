@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced Functions</title>
+  </head>
+  <body>
+    <button class="js-button" onclick="">Click</button>
+    <script>
+      const buttonElement = document.querySelector('.js-button');
+      buttonElement.addEventListener('click', () => {
+        console.log('click');
+      });
+      /*
+      count = 0;
+      setTimeout(function(){
+        console.log('timeout');
+      }, 3000);
+
+      console.log('next line');
+
+      setInterval(function(){
+        console.log('timeout');
+        count += 1;
+      }, 3000);
+      */
+
+      /*
+      [
+        'make dinner',
+        'wash dishes',
+        'watch youtube'
+      ].forEach(function(value, index){
+        console.log(value);
+        console.log(index);
+      
+      });
+      
+      const arrowFunction = (param) => {
+        console.log(param);
+      };
+      arrowFunction('hello');
+
+      const oneParam = param => {
+        console.log(param+1);
+      };
+      oneParam(2);
+
+      const oneLine = param => param+2;
+      console.log(oneLine(2));
+      */
+    </script>
+  </body>
+</html>

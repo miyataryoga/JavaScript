@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <p>
+      <button onclick="
+        updataCalculation('1');
+      ">1</button>
+      
+      <button onclick="
+        updataCalculation('2');
+      ">2</button>
+
+      <button onclick="
+        updataCalculation('3');
+      ">3</button>
+
+      <button onclick="
+        updataCalculation('+');
+      ">+</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updataCalculation('4');
+      ">4</button>
+      
+      <button onclick="
+        updataCalculation('5');
+      ">5</button>
+
+      <button onclick="
+        updataCalculation('6');
+      ">6</button>
+
+      <button onclick="
+        updataCalculation(' - ');
+      ">-</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updataCalculation('7');
+      ">7</button>
+      
+      <button onclick="
+        updataCalculation('8');
+      ">8</button>
+
+      <button onclick="
+        updataCalculation('9');
+      ">9</button>
+
+      <button onclick="
+        updataCalculation(' * ');
+      ">*</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updataCalculation('0');
+      ">0</button>
+      
+      <button onclick="
+        updataCalculation('.');
+      ">.</button>
+
+      <button onclick="
+        updataCalculation('=');
+      ">=</button>
+
+      <button onclick="
+        updataCalculation(' / ');
+      ">/</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updataCalculation('');
+      ">Clear</button>
+    </p>
+   
+    <script>
+      let calculation = '';
+      function updataCalculation(d){
+        if(d==='=')
+          calculation = eval(calculation);
+        else if(d==='')
+          calculation = '';
+        else
+          calculation += d;
+        console.log(calculation);
+      }
+    </script>
+  </body>
+</html>

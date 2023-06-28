@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <script>
+      let words = ['hello', 'world', 'search', 'good', 'search'];
+      function findSearch(words){
+        let searchCount = -1;
+        for(let i=0;i<words.length;i++){
+          if(words[i]==='search'){
+            searchCount = i;
+            break;
+          }
+        }
+        return searchCount;
+      }
+      console.log(findSearch(words));
+      words = ['not', 'found'];
+      console.log(findSearch(words));
+    </script>
+  </body>
+</html>

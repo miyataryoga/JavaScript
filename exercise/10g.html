@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Only 1 Button
+    </title>
+    <style>
+      .is-button{
+        font-family: Arial;
+        font-size: 15px;
+        background-color: #E6E6E6;
+        color: black;
+        padding: 10px 15px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .clicked-button{
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="is-button js-button" onclick="clickButton('.js-button');">Gaming</button>
+    <button class="is-button js-button2" onclick="clickButton('.js-button2');">Music</button>
+    <button class="is-button js-button3" onclick="clickButton('.js-button3');">Tech</button>
+    <script>
+      function clickButton(buttonName){
+        const button = document.querySelector(buttonName);
+        if(!button.classList.contains('clicked-button')){
+          removePrevious();
+          button.classList.add('clicked-button');
+        }
+        else{
+          button.classList.remove('clicked-button');
+        }
+      };
+
+      function removePrevious(){
+        const previousButton = document.querySelector('.clicked-button');
+        if (previousButton) {
+          previousButton.classList.remove('clicked-button');
+        }
+      }
+    </script>
+  </body>
+</html>

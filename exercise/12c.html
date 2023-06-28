@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <button onclick="loadFinish('.button1');" class="button1">Click</button>
+    <script>
+      function loadFinish(name){
+        const htmlElement = document.querySelector(name);
+        setTimeout(
+          function(){
+            htmlElement.innerHTML = 'Finished!'
+          },1000);
+        htmlElement.innerHTML = 'Loading...';
+      }
+    </script>
+  </body>
+</html>
